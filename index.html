@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Seating Chart</title>
+
+    <script src="fabric.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="sidenav">
+      <center>
+      <h3>Layout Menu</h3>
+
+      How many square seats?
+      <input type = "number" id = "squareIterations" min = "1" max = "35">
+      <button type = "button" onclick = addSquareSeat()>Add Seats</button><br><br>
+      
+      <hr><br>
+      Click to add a rectangular table. <br><br>
+      <button type = "button" onclick = addTable()>Add Table</button><br><br>
+
+      <hr><br>
+      Select a seat and click button to delete seat. <br><br>
+      <button type = "button" onclick = clickToRemove()>Click to Remove</button>
+
+      <button id="multiselect" class="btn btn-info">Make a multiselection</button>
+      <button id="group" class="btn btn-info">Group selected objecs</button>
+      <button id="ungroup" class="btn btn-info">Ungroup selected objects</button>
+      <button id="addmore" class="btn btn-info">Add more shapes</button>
+      <button id="discard" class="btn btn-info">Discard selection</button>
+
+    </center>
+    </div>
+
+  <div class = "main">
+    <canvas id="c" width="2000" height="1000"></canvas>
+  </div>
+
+    
+
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+
+</html>
